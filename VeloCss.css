@@ -1,0 +1,666 @@
+
+
+/* Общие стили */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    text-decoration-line: none;
+        margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+a{
+      text-decoration: none;
+}
+
+  *, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+  /* ----------------------------- */
+
+  /* Параметры контейнера */
+
+  .container{
+    max-width: 970px;
+  padding: 0 15px; 
+     margin: 0 auto; 
+  }
+
+  /* ----------------------------- */
+  /* меню  сайта*/
+
+
+.velo_menu {
+  position: fixed; 
+  top: 0;     
+  left: 0;
+  width: 100%; 
+  background-color: #fff; 
+  z-index: 1000;  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  padding: 10px 0; 
+}
+
+
+   .velo_menu h1{
+    color: #69B9FF;
+    font-weight: 400;
+font-size: 25px;
+text-transform: uppercase;
+  }
+
+  .velo_menu_main{
+ justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+  }
+  .velo_menu_home {
+    display: flex;
+        gap: 40px;
+  }
+  .velo_menu_home_p {
+    font-weight: 400;
+font-size: 15px;
+  }
+
+.elo_menu_home_p, .homep2{
+color: #0082F3;
+}
+
+
+/* ----------------------------- */
+
+/* Шапка сайта */
+
+.velo_header {
+background-image: url('./img/header.png');
+min-height: 750px; 
+display: flex;
+justify-content: center; 
+align-items: center;
+
+background-position: center;
+background-size: cover;
+
+}
+.container {
+}
+.velo_main {
+  justify-content: center;
+  display: grid;
+  justify-items: center
+}
+.velo_header_h2 {
+  font-weight: 400;
+font-size: 59px;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+line-height: 102%;
+letter-spacing: 0.07em;
+}
+.velo_header_btns {
+display: flex;
+gap: 20px;
+margin-top: 110px;
+}
+.velo_header_btn1 {
+ width: 138px;
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid #69B9FF;
+  background-color:  #69B9FF;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.velo_header_btn1 a{
+  color: #fff;
+    font-size: 16px;
+  font-weight: 400;
+    line-height: 131%;
+  letter-spacing: 0.12em;
+    text-transform: uppercase;
+  text-align: center;
+}
+button:hover {
+  background-color: #727272;  
+  color: #fff;        
+}
+
+
+.velo_header_btn2 {
+    font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+width: 183px;
+height: 43px;
+border: 1px solid #fff;
+border-radius: 4px;
+background:inherit;
+}
+
+/* ----------------------------- */
+
+/* Информация Сайта */
+
+.info_velo {
+  background-color: #FFFFFF;
+}
+.container {
+}
+
+.info_velo_txt_main{
+  margin-top: 80px;
+}
+
+.info_velo_txt_main p{
+  font-weight: 400;
+font-size: 17px;
+line-height: 118%;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+text-align: center;
+color: #8e8e9c;
+margin-top: 15px;
+}
+.info_velo_txt_main h2{
+  font-weight: 400;
+font-size: 30px;
+line-height: 120%;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+text-align: center;
+color: #676770;
+}
+.info_velo_txt_panel {
+  margin-top: 58px;
+  display: flex;
+  gap: 20px;
+     justify-content: center;
+}
+.info_velo_txt_card {
+  border: 1px solid #dcebf7;
+border-radius: 5px;
+width: 300px;
+height: 291px;
+display: grid;
+justify-items: center;
+}
+
+.info_velo_txt_card h2 {
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+text-align: center;
+color: #676770;
+}
+.info_velo_txt_card p{
+font-weight: 400;
+font-size: 14px;
+line-height: 179%;
+text-align: center;
+color: #6a859c;
+}
+
+.info_velo_txt_card img{
+box-shadow: 0 0 0 0 #2e9dff;
+margin-top: 30px;
+}
+
+
+
+/* ----------------------------- */
+
+ /* Сервис Меню */
+.services_velo {
+  background-color: #192024;
+ margin-top: 80px;
+  background-size: auto; 
+}
+.container {
+}
+.services_velo_txt_main {
+       padding-top: 80px;
+}
+.services_velo_txt_main p {
+font-weight: 400;
+font-size: 17px;
+line-height: 118%;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+text-align: center;
+color: #e8e8e8;
+}
+.services_velo_txt_main h2 {
+font-weight: 400;
+font-size: 30px;
+line-height: 120%;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+.services_velo_info_main {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.services_velo_info_main_card {
+  display: grid;
+    justify-items: center;
+  width: 460px;
+}
+
+.services_velo_info_main_card  h2{
+  margin-top: 20px;
+  font-weight: 400;
+font-size: 23px;
+line-height: 150%;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+
+.services_velo_info_main_card p{
+  font-weight: 400;
+font-size: 14px;
+line-height: 179%;
+text-align: center;
+color: #fff;
+margin-top: 23px;
+ width: 398px;
+}
+
+.services_velo_info_main_card  img{
+width: 430px;
+margin-top: 75px;
+height: 287px;
+}
+
+.services_velo_info_main_card  button{
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+border: 1px solid #fff;
+border-radius: 4px;
+width: 183px;
+margin-top: 20px;
+height: 43px;
+background: inherit;
+  margin-bottom: 50px;
+}
+
+/* ----------------------------- */
+ /* информация и картинка  */
+
+
+.tab_sc {
+  display: flex;
+  justify-content: center;
+}
+.container.container_tab{
+  display: grid;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tab_sc_info {
+  display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 77px;
+}
+.tab_sc_info h2 {
+font-weight: 400;
+font-size: 30px;
+line-height: 120%;
+letter-spacing: 0.17em;
+text-transform: uppercase;
+text-align: center;
+color: #676770;
+}
+.tab_sc_info p{
+font-weight: 400;
+font-size: 17px;
+line-height: 118%;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+text-align: center;
+color: #8e8e9c;
+}
+
+
+.tab_sc_btns {
+  margin-top: 70px;
+}
+
+.tab_sc_btn {
+width: 196px;
+  height: auto;
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+border-radius: 4px;
+background-color: #92A0AD;
+}
+
+
+.tab_sc_btn.tab_sc_btn_blue {
+  background-color: #2E80B6;
+}
+
+.tab_sc_img_title {
+  margin-top: 40px;
+  width: 940px;
+  height: auto;
+display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.tab_sc_img_title h2 {
+  font-weight: 400;
+font-size: 31px;
+line-height: 116%;
+text-align: center;
+color: #676770;
+margin-top: 15px;
+}
+.tab_sc_img_title p{
+font-weight: 400;
+font-size: 13px;
+margin-top: 20px;
+line-height: 192%;
+text-align: center;
+color: #6a859c;
+}
+
+.velo_title_home{
+  margin-top: 25px;
+}
+/* ----------------------------- */
+
+
+.footer_contact {
+margin-top: 130px;
+}
+.container.container_footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 110px;
+}
+.footer_cont_info {
+  width: 320px;
+}
+
+.footer_cont_info h2{
+font-weight: 400;
+font-size: 18px;
+line-height: 111%;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: #676770;
+}
+
+.footer_cont_info p {
+  font-weight: 400;
+font-size: 14px;
+line-height: 179%;
+color: #6a859c;
+margin-top: 22px;
+
+}
+
+.footer_cont_links {
+}
+
+.footer_cont_links p {
+  margin-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  color: #668cad;
+  border-bottom: 1px solid #e6ecf2; 
+  width: 230px;
+
+}
+
+.footer_cont_links h2 {
+font-weight: 400;
+font-size: 18px;
+line-height: 111%;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: #676770;
+}
+
+.footer_cont_social {
+  margin-top: 22px;
+}
+
+.footer_cont_social h2 {
+font-weight: 400;
+font-size: 18px;
+line-height: 111%;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: #676770;
+
+}
+
+.icons a{
+  font-weight: 400;
+line-height: 154%;
+color: #668cad;
+  font-size: 14px;
+  text-decoration: none;
+}
+ 
+.icons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e6ecf2; 
+  width: 230px;
+}
+
+.icons img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.footer_final{
+  width: 100%;
+  background-color: #383838;
+  height: 101px;
+  margin-top: 30px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* АДАПТАЦИЯ ВСЕВО САЙТА */
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+@media (max-width: 860px) {
+
+
+.services_velo_info_main_card p{
+  font-weight: 400;
+font-size: 14px;
+text-align: center;
+width: 235px;
+}
+
+.services_velo_info_main_card  img{
+width: 90%;
+    height: auto;
+    margin-top: 5%; 
+}
+
+
+
+.container.container_footer { 
+    flex-wrap: wrap;
+}
+
+.velo_menu_home_p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+  .info_velo_txt_panel {
+    flex-wrap: wrap;
+}
+
+.services_velo_info_main_card {
+    margin-top: 20px;
+}
+
+.tab_sc_btns {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tab_sc_btn {
+    width: 250px;
+    height: 60px;    
+    font-weight: 400;
+    font-size: 18px;   
+
+}
+
+.velo_title_home {
+  max-width: 100%;
+  width: 100%;
+max-width: 480px;
+}
+
+.velo_title_home p {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+}
+
+
+
+@media (max-width: 500px) {
+      .services_velo_info_main_card p {
+        font-size: 11px;
+        width: 207px;
+    }
+
+    .velo_title_home {
+  max-width: 100%;
+  width: 100%;
+max-width: 450px;
+}
+}
+
+@media (max-width: 360px) {
+      .services_velo_info_main_card p {
+        font-size: 9px;
+        width: 164px;
+    }
+    .services_velo_info_main_card button {
+          width: 147px;
+    }
+
+    .services_velo_info_main_card h2 {
+    font-size: 14px;
+    }
+
+    .tab_sc_info p {
+    font-size: 12px;}
+
+    
+    .velo_title_home {
+  max-width: 100%;
+  width: 100%;
+max-width: 340px;
+}
+
+    .velo_title_home {
+      margin-top: 10px
+      ;
+    }
+}
+
+/* ----------------------------- */
+
+
+
+.tab_sc_img_title2 {
+ display: none;
+}
+.velo_title_home2 {
+ display: none;
+}
+.tab_sc_img_title3 {
+ display: none;
+}
+.velo_title_home3 {
+ display: none;
+}
+
+
+.tab_sc_img_title img {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.tab_sc_img_title img.active {
+  opacity: 1;
+}
+
+.tab_sc_img_title h2 {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.tab_sc_img_title h2.active {
+  opacity: 1;
+}
