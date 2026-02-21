@@ -95,8 +95,7 @@ background-position: center;
 background-size: cover;
 
 }
-.container {
-}
+
 .velo_main {
   justify-content: center;
   display: grid;
@@ -166,8 +165,7 @@ background:inherit;
 .info_velo {
   background-color: #FFFFFF;
 }
-.container {
-}
+
 
 .info_velo_txt_main{
   margin-top: 80px;
@@ -239,8 +237,7 @@ margin-top: 30px;
  margin-top: 80px;
   background-size: auto; 
 }
-.container {
-}
+
 .services_velo_txt_main {
        padding-top: 80px;
 }
@@ -445,8 +442,6 @@ margin-top: 22px;
 
 }
 
-.footer_cont_links {
-}
 
 .footer_cont_links p {
   margin-top: 12px;
@@ -629,24 +624,19 @@ max-width: 340px;
       margin-top: 10px
       ;
     }
+
+    
+.velo_header_btns{
+  flex-direction: column;
+  justify-content: center;
+  align-items:center
+}
 }
 
 /* ----------------------------- */
 
 
 
-.tab_sc_img_title2 {
- display: none;
-}
-.velo_title_home2 {
- display: none;
-}
-.tab_sc_img_title3 {
- display: none;
-}
-.velo_title_home3 {
- display: none;
-}
 
 
 .tab_sc_img_title img {
@@ -664,3 +654,5 @@ max-width: 340px;
 .tab_sc_img_title h2.active {
   opacity: 1;
 }
+
+/* ----------------------------- */

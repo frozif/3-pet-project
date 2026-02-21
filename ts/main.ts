@@ -1,7 +1,7 @@
 // картинки с текстом связанный с табом
-let imgElement = document.querySelector(`.tab_sc_img_title img`)
-let titleTxtElement = document.querySelector(`.tab_sc_img_title h2`)
-tabsButtonsElement = document.querySelectorAll(`.tab_sc_btn`)
+let imgElement = document.querySelector(`.tab_sc_img_title img`) as HTMLImageElement
+let titleTxtElement = document.querySelector(`.tab_sc_img_title h2`)!
+let tabsButtonsElement = document.querySelectorAll<HTMLButtonElement>(`.tab_sc_btn`) 
 // -----------------------------------------------------------------------
 
 let imgCnt = [
@@ -45,7 +45,7 @@ let behiverScroll = document.querySelectorAll(`.velo_menu a`)
 behiverScroll.forEach(a => {
   a.addEventListener(`click`, (event)=>{
 event.preventDefault()
-    const aElementID = a.getAttribute('href').slice(1);
+    const aElementID = a.getAttribute('href')!.slice(1);
         let  targetElement = document.getElementById(aElementID);
             if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
